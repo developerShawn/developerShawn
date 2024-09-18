@@ -1,0 +1,255 @@
+/* -FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--spacing system(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  transition: all 0.5s;
+}
+main {
+  background-color: #111729;
+}
+
+.container {
+  width: 100%;
+}
+/* NAVIGATION */
+
+.header {
+  /* width: 128rem;  */
+  background-color: #111729;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+.logo .dark-mode {
+  display: block;
+  transition: opacity 0.5s;
+}
+
+.logo .light-mode {
+  display: none;
+}
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: space-between;
+}
+.nav-list:link,
+.nav-list:visited {
+  text-decoration: none;
+
+  color: #909193;
+}
+
+.top {
+  display: flex;
+}
+
+.nav-list:hover,
+.nav-list:active {
+  color: #fff;
+}
+
+.theme {
+  padding: 3px 3px;
+  border: none;
+  background-color: #223344;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.theme:hover {
+  background-color: #707070;
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+.moon-light-mode {
+  display: none;
+}
+.moon-dark-mode {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.sun-light-mode {
+  display: none;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.sun-dark-mode {
+  display: inline-block;
+}
+
+.control {
+  display: none;
+}
+.btn-nav {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.menu {
+  font-size: 2.4rem;
+  color: #fff;
+}
+.close {
+  font-size: 2.4rem;
+}
+
+.homepage {
+  display: flex;
+  padding: 0 4rem;
+}
+.hero-text {
+  padding-top: 2rem;
+}
+.hero-image {
+  max-width: 100%;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+h3 {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #909193;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 12px 26px;
+  background-color: #2a4dd0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: #223ea6;
+}
+.btn-2:link,
+.btn-2:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #2a4dd0;
+}
+.btn-2:hover,
+.btn-2:active {
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.checked {
+  display: flex;
+  gap: 4rem;
+}
+.checked-text {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  color: #909193;
+}
+
+/* Light Mode Styles */
+body.light-mode main {
+  background-color: #ffffff;
+}
+body.light-mode h2,
+body.light-mode h1,
+body.light-mode h3 {
+  color: #223344;
+}
+body.light-mode .logo.dark-mode {
+  display: none;
+}
+body.light-mode .logo.light-mode {
+  display: block;
+}
+body.light-mode .header {
+  background-color: #fff;
+}
+
+body.light-mode .nav-list:hover,
+body.light-mode .nav-list:active {
+  color: #223344;
+}
+body.light-mode .logo .light-mode {
+  display: block;
+}
+body.light-mode .logo .dark-mode {
+  display: none;
+}
+body.light-mode .moon-light-mode {
+  display: inline-block;
+}
+body.light-mode .moon-dark-mode {
+  display: none;
+  background-color: transparent;
+}
+body.light-mode .sun-dark-mode {
+  display: none;
+}
+body.light-mode .sun-light-mode {
+  display: inline-block;
+}
+body.light-mode .theme {
+  background-color: #111729;
+}
+body.light-mode .menu {
+  color: #111729;
+}
+body.light-mode footer {
+  background-color: #fff;
+}
+
+footer {
+  background-color: #111729;
+  width: 100%;
+  color: #909193;
+  padding: 0 4rem;
+  font-size: 1rem;
+}
+
+/* -FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--spacing system(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

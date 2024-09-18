@@ -1,0 +1,80 @@
+@media (max-width: 64em) {
+  .homepage {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero-text {
+    grid-row: 2;
+    padding-bottom: 10rem;
+  }
+}
+@media (max-width: 40em) {
+  .header {
+    justify-content: space-between;
+  }
+  .control {
+    display: inline-block;
+  }
+  .close {
+    display: none;
+  }
+  .nav-list:hover,
+  .nav-list:active {
+    color: #223344;
+  }
+  .nav-list {
+    font-size: 2.4rem;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 2rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(100%);
+  }
+  .nav-open .close {
+    display: inline-block;
+  }
+  .nav-open .menu {
+    display: none;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 27em) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2,
+  h3 {
+    font-size: 1.8rem;
+  }
+  .checked {
+    gap: 1rem;
+  }
+  .checked-text {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1.4rem;
+  }
+}
