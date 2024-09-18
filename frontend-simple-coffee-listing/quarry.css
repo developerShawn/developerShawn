@@ -1,0 +1,32 @@
+@media (max-width: 64em) {
+  .coffee {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 40em) {
+  .coffee {
+    grid-template-columns: 1fr;
+  }
+  .coffee img {
+    width: 35rem;
+  }
+}
+@media (max-width: 32.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 26.9em) {
+  .introduction {
+    width: auto;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 23.4375em) {
+  .coffee img {
+    width: 30rem;
+  }
+  html {
+    font-size: 50%;
+  }
+}

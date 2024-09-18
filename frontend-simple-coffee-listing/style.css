@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+}
+article {
+  /* background-color: red; */
+  padding: 10% 5%;
+  background-image: url(img/bg-cafe.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-color: #111315;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem 0;
+  background-color: #1b1d1f;
+  border-radius: 12px;
+  /* width: 70%;
+  transform: translateX(20%); */
+  background-image: url(svg/vector.svg);
+  /* background-size: cover; */
+  background-position: 63% 50px;
+  background-size: 24rem;
+  background-repeat: no-repeat;
+}
+.heading {
+  font-size: 3.2rem;
+  color: #fef7ee;
+  margin-bottom: 1rem;
+}
+.introduction {
+  color: #6f757c;
+  text-align: center;
+  width: 47rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+button {
+  appearance: none;
+  background: none;
+  border: none;
+}
+.options {
+  display: flex;
+  gap: 2rem;
+  /* color: #fef7ee; */
+  margin-bottom: 3rem;
+}
+.option {
+  text-decoration: none;
+  color: #fef7ee;
+  font-weight: bold;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 9px;
+}
+.option:hover,
+.option:visited {
+  background-color: #6f757c;
+}
+.coffee {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  row-gap: 6rem;
+}
+.coffee img {
+  border-radius: 12px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  width: 30rem;
+}
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.name {
+  color: #fef7ee;
+}
+.price {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  background-color: #bee3cc;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.star-rate {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.rate {
+  font-weight: bold;
+  color: #fef7ee;
+}
+.rate span {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #6f757c;
+}
+.no-rating {
+  font-weight: bold;
+  color: #6f757c;
+  font-size: 1.6rem;
+}
+
+.sold-out {
+  color: #ed735d;
+  font-weight: bold;
+  margin-left: auto;
+  font-size: 1rem;
+}
+.coffee div {
+  transition: all 0.5s;
+  position: relative;
+}
+.coffee div:hover {
+  transform: translateY(-1rem);
+}
+
+.tag::before {
+  content: "Popular";
+  background-color: #f6c768;
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 100px;
+  color: #111315;
+  position: absolute;
+  transform: translate(10%, 20%);
+}
+footer {
+  color: #6f757c;
+  width: 100%;
+  background-color: #111315;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+}

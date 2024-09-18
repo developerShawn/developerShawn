@@ -1,0 +1,10 @@
+{
+  "icons": [
+    {
+      "srs": "img/coffee-logo-192.jpg",
+      "type": "image/png",
+      "size": "192x192"
+    },
+    { "srs": "img/coffee-logo-512.jpg", "type": "image/png", "size": "512x512" }
+  ]
+}
